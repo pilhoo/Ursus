@@ -1,0 +1,14 @@
+SOURCES:
+/home/michal/Projekty/kde4/Ursus/main.cpp;/home/michal/Projekty/kde4/Ursus/player.cpp;/home/michal/Projekty/kde4/Ursus/playlistdroppointer.cpp;/home/michal/Projekty/kde4/Ursus/playlistitem.cpp;/home/michal/Projekty/kde4/Ursus/playlistwidget.cpp;/home/michal/Projekty/kde4/Ursus/metainforesolver.cpp;/home/michal/Projekty/kde4/Ursus/playlisttabs.cpp;/home/michal/Projekty/kde4/Ursus/playlisttabbar.cpp;/home/michal/Projekty/kde4/Ursus/mainwin.cpp;/home/michal/Projekty/kde4/Ursus/trayicon.cpp;/home/michal/Projekty/kde4/Ursus/ursusapp.cpp
+MOC_COMPILE_DEFINITIONS:
+_BSD_SOURCE
+MOC_DEFINITIONS:
+ -Wall -O2 -ggdb -D_BSD_SOURCE
+MOC_INCLUDES:
+/usr/include;/usr/include/KDE;/usr/include/qt4/QtXmlPatterns;/usr/include/qt4/QtXml;/usr/include/qt4/QtWebKit;/usr/include/qt4/QtUiTools;/usr/include/qt4/QtTest;/usr/include/qt4/QtSvg;/usr/include/qt4/QtSql;/usr/include/qt4/QtScriptTools;/usr/include/qt4/QtScript;/usr/include/qt4/QtOpenGL;/usr/include/qt4/QtNetwork;/usr/include/qt4/QtHelp;/usr/include/qt4/QtDesigner;/usr/include/qt4/QtDBus;/usr/include/qt4/QtAssistant;/usr/include/qt4/Qt3Support;/usr/include/qt4/QtGui;/usr/include/qt4/QtCore;/usr/include/qt4/Qt;/usr/share/qt4/mkspecs/default;/usr/include/qt4
+CMAKE_INCLUDE_DIRECTORIES_PROJECT_BEFORE:
+
+CMAKE_BINARY_DIR:
+/home/michal/Projekty/kde4/Ursus/build
+CMAKE_SOURCE_DIR:
+/home/michal/Projekty/kde4/Ursus

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=ursus %U
+Icon=ursus
+Terminal=false
+Name=Ursus
+GenericName=Music Player
+GenericName[pl]=Prosty Odtwarzacz muzyki
+Categories=Qt;KDE;AudioVideo;

@@ -1,0 +1,69 @@
+Application: Ursus (ursus), signal: Segmentation fault
+[Current thread is 1 (Thread 0x7f47ca19c760 (LWP 6023))]
+
+Thread 5 (Thread 0x7f47b6893710 (LWP 6024)):
+#0  0x00007f47c82e63e9 in pthread_cond_timedwait@@GLIBC_2.3.2 () from /lib/libpthread.so.0
+#1  0x00007f47bb2fea71 in metronom_sync_loop () from /usr/lib/libxine.so.1
+#2  0x00007f47c82e181a in start_thread () from /lib/libpthread.so.0
+#3  0x00007f47c67b6c7d in clone () from /lib/libc.so.6
+#4  0x0000000000000000 in ?? ()
+
+Thread 4 (Thread 0x7f47b5a58710 (LWP 6025)):
+#0  0x00007f47c82e5420 in pthread_mutex_unlock () from /lib/libpthread.so.0
+#1  0x00007f47c418a43e in g_main_context_prepare () from /usr/lib/libglib-2.0.so.0
+#2  0x00007f47c418a821 in g_main_context_iterate () from /usr/lib/libglib-2.0.so.0
+#3  0x00007f47c418ad50 in g_main_context_iteration () from /usr/lib/libglib-2.0.so.0
+#4  0x00007f47c865e176 in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQtCore.so.4
+#5  0x00007f47c8634532 in QEventLoop::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQtCore.so.4
+#6  0x00007f47c8634904 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQtCore.so.4
+#7  0x00007f47c854de4b in QThread::exec() () from /usr/lib/libQtCore.so.4
+#8  0x00007f47bb557394 in Phonon::Xine::XineThread::run() () from /usr/lib/qt/plugins/phonon_backend/phonon_xine.so
+#9  0x00007f47c8550ba5 in ?? () from /usr/lib/libQtCore.so.4
+#10 0x00007f47c82e181a in start_thread () from /lib/libpthread.so.0
+#11 0x00007f47c67b6c7d in clone () from /lib/libc.so.6
+#12 0x0000000000000000 in ?? ()
+
+Thread 3 (Thread 0x7f47b504e710 (LWP 6026)):
+#0  0x00007f47c67ae483 in poll () from /lib/libc.so.6
+#1  0x00007f47b50547ae in ao_alsa_handle_event_thread () from /usr/lib/xine/plugins/1.27/xineplug_ao_out_alsa.so
+#2  0x00007f47c82e181a in start_thread () from /lib/libpthread.so.0
+#3  0x00007f47c67b6c7d in clone () from /lib/libc.so.6
+#4  0x0000000000000000 in ?? ()
+
+Thread 2 (Thread 0x7f47b484d710 (LWP 6027)):
+#0  0x00007f47c82e607c in pthread_cond_wait@@GLIBC_2.3.2 () from /lib/libpthread.so.0
+#1  0x00007f47bb30f52b in ao_loop () from /usr/lib/libxine.so.1
+#2  0x00007f47c82e181a in start_thread () from /lib/libpthread.so.0
+#3  0x00007f47c67b6c7d in clone () from /lib/libc.so.6
+#4  0x0000000000000000 in ?? ()
+
+Thread 1 (Thread 0x7f47ca19c760 (LWP 6023)):
+[KCrash Handler]
+#5  0x00007f47c8646e9b in QObject::setProperty(char const*, QVariant const&) () from /usr/lib/libQtCore.so.4
+#6  0x00007f47c9ae86fa in KAction::setShortcut(QKeySequence const&, QFlags<KAction::ShortcutType>) () from /usr/lib/libkdeui.so.5
+#7  0x0000000000416870 in UrsusMainWin::setupActions() ()
+#8  0x000000000041813c in UrsusMainWin::UrsusMainWin(UrsusPlayer*) ()
+#9  0x000000000041a163 in UrsusApp::newInstance() ()
+#10 0x00007f47c9bc15c6 in KUniqueApplicationAdaptor::newInstance(QByteArray const&, QByteArray const&) () from /usr/lib/libkdeui.so.5
+#11 0x00007f47c9bc1bb6 in KUniqueApplicationAdaptor::qt_metacall(QMetaObject::Call, int, void**) () from /usr/lib/libkdeui.so.5
+#12 0x00007f47c894aee4 in ?? () from /usr/lib/libQtDBus.so.4
+#13 0x00007f47c894c069 in ?? () from /usr/lib/libQtDBus.so.4
+#14 0x00007f47c894c947 in ?? () from /usr/lib/libQtDBus.so.4
+#15 0x00007f47c894cbc8 in ?? () from /usr/lib/libQtDBus.so.4
+#16 0x00007f47c8645059 in QObject::event(QEvent*) () from /usr/lib/libQtCore.so.4
+#17 0x00007f47c737eccd in QApplication::event(QEvent*) () from /usr/lib/libQtGui.so.4
+#18 0x00007f47c737507c in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /usr/lib/libQtGui.so.4
+#19 0x00007f47c737c34e in QApplication::notify(QObject*, QEvent*) () from /usr/lib/libQtGui.so.4
+#20 0x00007f47c9bba8f6 in KApplication::notify(QObject*, QEvent*) () from /usr/lib/libkdeui.so.5
+#21 0x00007f47c8635bfc in QCoreApplication::notifyInternal(QObject*, QEvent*) () from /usr/lib/libQtCore.so.4
+#22 0x00007f47c863680a in QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) () from /usr/lib/libQtCore.so.4
+#23 0x00007f47c865e583 in ?? () from /usr/lib/libQtCore.so.4
+#24 0x00007f47c418726e in g_main_context_dispatch () from /usr/lib/libglib-2.0.so.0
+#25 0x00007f47c418ac28 in g_main_context_iterate () from /usr/lib/libglib-2.0.so.0
+#26 0x00007f47c418ad50 in g_main_context_iteration () from /usr/lib/libglib-2.0.so.0
+#27 0x00007f47c865e123 in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQtCore.so.4
+#28 0x00007f47c740814e in ?? () from /usr/lib/libQtGui.so.4
+#29 0x00007f47c8634532 in QEventLoop::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQtCore.so.4
+#30 0x00007f47c8634904 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /usr/lib/libQtCore.so.4
+#31 0x00007f47c8636ab9 in QCoreApplication::exec() () from /usr/lib/libQtCore.so.4
+#32 0x000000000040de29 in main ()

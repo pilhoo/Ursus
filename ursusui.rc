@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<gui name="ursus" version="4">
+	<ToolBar name="actionsToolBar" position="Bottom" iconText="icononly">
+		<text>Actions Toolbar</text>
+		<Action name="previous" />
+		<Action name="play" />
+		<Action name="pause" />
+		<Action name="stop" />
+		<Action name="next" />
+	</ToolBar>
+	<ToolBar name="playlistToolBar" position="Top" iconText="icononly">
+		<text>Playlist Toolbar</text>
+		<Action name="addtoplaylist" />
+		<Action name="removefromplaylist" />
+		<WeakSeparator/>
+		<Action name="newplaylist" />
+		<Action name="openplaylist" />
+		<Action name="saveplaylist" />
+		<Action name="clearplaylist" />
+		<WeakSeparator/>
+<!--		<Action name="undo" />
+		<Action name="redo" />-->
+		<Action name="playlist search"/>
+<!-- 		<Action name="sort" /> -->
+		<Action name="jump" />
+		<Action name="playingmode"/>
+		<Action name="closeplaylist" />
+	</ToolBar>
+	<ToolBar name="volumeToolBar" fullWidth="true" position="Bottom" iconText="icononly">
+		<text>Volume Toolbar</text>
+		<Action name="mute"/>
+		<Action name="volume slider" />
+		<Action name="volume label" />
+	</ToolBar>
+	<ToolBar name="seekToolBar" fullWidth="true" position="Bottom" iconText="icononly">
+		<text>Seek Toolbar</text>
+		<Action name="seekslider" />
+	</ToolBar>
+	<MenuBar>
+		<Menu name="actions" >
+			<text>Actions</text>
+			<Action name="previous" />
+			<Action name="play" />
+			<Action name="pause" />
+			<Action name="stop" />
+			<Action name="next" />
+		</Menu>
+		<Menu name="playlist">
+			<text>Playlist</text>
+			<Action name="addtoplaylist" />
+			<Action name="removefromplaylist" />
+			<Separator/>
+			<Action name="newplaylist" />
+			<Action name="openplaylist" />
+			<Action name="saveplaylist" />
+			<Action name="clearplaylist" />
+			<Action name="closeplaylist" />
+<!--			<Separator/>
+			<Action name="undo" />
+			<Action name="redo" />
+			<Separator/>-->
+<!-- 			<Action name="sort" /> -->
+			<Action name="jump" />
+		</Menu>
+	</MenuBar>
+</gui>

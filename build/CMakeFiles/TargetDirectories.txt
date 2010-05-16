@@ -1,0 +1,3 @@
+/home/michal/Projekty/kde4/Ursus/build/CMakeFiles/uninstall.dir
+/home/michal/Projekty/kde4/Ursus/build/CMakeFiles/ursus.dir
+/home/michal/Projekty/kde4/Ursus/build/CMakeFiles/ursus_automoc.dir
